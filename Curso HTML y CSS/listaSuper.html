@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0 ">
+    <meta name="description" content="Esta es una pagina para lista de compras">
+    <meta name="robots" content="index, follow">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    
+
+
+</head>
+<body >
+
+    <header>
+        <nav>
+            <ul class="main-nav">
+                <li class="navItem"><a href="">Home</a></li>
+                <li class="navItem"><a href="">Cursos</a></li>
+                <li class="navItem"><a href="">Instructores</a></li>
+                <li class="navItem"><a href="">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Soy la lista del super!</h1>
+
+            <ul>
+                <li>
+                    <h2>Frutas</h2>
+                    <ol>
+                        <li><h3><a href="https://www.kiwilimon.com">Manzana</a></h3></li>
+                        <li><h3><a href="https://www.kiwilimon.com">Platano</a></h3></li>
+                        <li><h3><a href="https://www.kiwilimon.com">Papaya</a></h3></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>Carnes</h2>
+                    <ol>
+                        <li><h3><a href="https://www.kiwilimon.com">Pollo</a></h3></li>
+                        <li><h3><a href="https://www.kiwilimon.com">Carne molida</a></h3></li>
+                    </ol>
+                </li>
+                <li>
+                    <h2>Verduras</h2>
+                    <ol>
+                        <li>
+                            <h3><a href="https://www.kiwilimon.com">Limón</a></h3></li>
+                        <li><h3><a href="https://www.kiwilimon.com">Zanahoria</a></h3></li>
+                    </ol>
+                </li>
+            </ul>
+
+        </section>
+        <section>
+            <img src="img/berenjenas-crudas-listas-cocinar_23-2150410413.jpg" alt="Imagen de berenjenas" width=15%>
+        </section>
+        <section>
+            <figure>
+                <img src="img/pexels-rahib-yaqubov-15377585-2.jpg" alt="Foto de pexels" width=20%> <figcaption>Foto extraida de pexels</figcaption>
+            </figure>
+        </section>
+        <section>
+            <video src="video/20160624_234507.mp4#t=10,60" width=40% controls preload="auto"></video>
+        </section>
+        <section>
+            <form action="obtener" method="get">
+                <label for="Nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" name="nombre" id="Nombre" placeholder="Ingresa tu nombre">
+                </label>
+                <label for="dia">
+                    <span>¿Cuando iniciaste con platzi?</span>
+                    <input type="date" name="nombre" id="dia">
+                </label>
+                <label for="horario">
+                    <span>¿En que horario?</span>
+                    <input type="time" name="nombre" id="horario">
+                </label>
+
+            </form>
+        </section>
+
+        <section>
+            <form action="" method="get">
+                <label for="hora">
+                    <span>Hora:</span>
+                    <input type="time" id="hora" name="hora">
+                </label>
+                <label for="dia">
+                    <span>Día:</span>
+                    <input type="date" id="dia" name="dia">
+                </label>
+                <label for="semana">
+                    <span>Hora:</span>
+                    <input type="week" id="semana" name="semana">
+                </label>
+                <label for="mes">
+                    <span>Mes:</span>
+                    <input type="month" id="mes" name="mes">
+                </label>
+                <input type="submit" >
+            </form>
+            <form action="">
+                <label for="calendario">
+                    <span>Calendario:</span>
+                    <input type="datetime-local" id="calendario" name="calendario">
+                </label>
+                <input type="submit" name="" id="enviar">
+               
+
+            </form>
+        </section>
+        <section>
+            <h1>Formulario solicitando información</h1>
+            <form action="">
+                <label for="nombre">
+                    <span>¿Cual es tu nombre?</span>
+                    <input type="text" name="nombre" id="nombre" autocomplete="name" required >
+                </label>
+                <label for="correo">
+                    <span>¿Cual es tu correo?</span>
+                    <input type="email" name="correo" id="correo" autocomplete="email" required>
+                </label>
+                <label for="pais">
+                    <span>¿Cual es tu pais?</span>
+                    <!-- <input type="text" name="pais" id="pais" autocomplete="country" required> -->
+                    <select name="paises" id="pais">
+                        <option value=""></option>
+                        <option value="México">México</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="India">India</option>
+                    </select>
+                    <input list="paises"">
+                    <datalist id="paises">
+                        <option value="México"></option>
+                        <option value="Estados Unidos"></option>
+                        <option value="India"></option>
+                        <option value="Trinidad y Tobago"></option>
+                    </datalist>
+
+                </label>
+                <label for="cp">
+                    <span>¿Cual es tu correo postal?</span>
+                    <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+                </label>
+                <h2>Primer tipo de submit</h2>
+                <input type="submit" value="Nombre">
+                <h2>Segundo tipo de submit</h2>
+                <button class="btn-primary btn" type="submit">Enviar</button>
+
+            </form>
+        </section>
+        <section>
+            <p class="parrafo">Este es un párrafo de prueba</p>
+            <p id="parrafo2">Este es un párrafo de prueba para estilo con ID</p>
+        </section>
+        
+
+
+
+    </main>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+
+    
+</body>
+
+
+
+
+</html>

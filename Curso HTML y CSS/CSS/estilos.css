@@ -1,0 +1,70 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+p {
+    color: red;
+    font-size: 70px;
+}
+/*body {
+    background-color: black;
+    color: white;
+}*/
+
+/* Class */
+
+.parrafo {
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50;
+}
+
+/* ID */
+
+#parrafo2{
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50;
+}
+
+.main-nav{
+    color: white;
+    background-color: gray;
+    margin: auto;
+    padding: 10px;
+    list-style: none;
+}
+.navItem{
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navItem a{
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.main-nav a:hover{
+    color: black;
+
+}
+.main-nav a:active{
+    color: red;
+}
+
+.main-nav a::before{
+    content: " | ";
+}
+main{
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
+
+}
