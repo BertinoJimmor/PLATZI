@@ -30,6 +30,11 @@ class Guest extends Base{
     protected $name = 'Invitado';
 }
 
-$guest = new Guest();å
+$guest = new Guest();
+echo $guest->login;
 
+$usuario = new User('Italo');
+echo $guest->login;
+
+$admin = new Admin('Linda');
 echo $guest->login;
