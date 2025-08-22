@@ -22,8 +22,6 @@ console.log("División:", division);
 console.log("Módulo:", modulo);
 
 
-
-
 // 3 Imprime 5 comparaciones verdaderas con diferentes operadores de comparación
 console.log(5 > 3); // Mayor que
 console.log(5 < 10); // Menor que
@@ -45,7 +43,11 @@ let resultado = (numero > 5) ? "El número es mayor que 5" : "El número es meno
 console.log(resultado);
 
 
+// el framework es como una receta
 
+
+// la liberaria es una parte del framework que hace una funcion específica
+// y que se puede usar de forma independiente   
 
 
 
