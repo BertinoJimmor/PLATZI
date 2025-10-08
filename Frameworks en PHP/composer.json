@@ -1,0 +1,24 @@
+{
+    "name": "bertino/frameworksenphp",
+    "description": "Proyecto Básico",
+    "autoload": {
+        "psr-4": {
+            "Bertino\\Frameworksenphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Bertino jimmor",
+            "email": "77550482+BertinoJimmor@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload" :{
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
